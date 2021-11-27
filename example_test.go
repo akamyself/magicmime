@@ -19,7 +19,7 @@ package magicmime_test
 import (
 	"log"
 
-	"github.com/rakyll/magicmime"
+	"github.com/doronbehar/magicmime"
 )
 
 func ExampleTypeByFile() {
