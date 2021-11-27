@@ -241,3 +241,7 @@ func Close() {
 	dec.Close()
 	dec = nil
 }
+
+func Version() int {
+	return int(C.magic_version())
+}

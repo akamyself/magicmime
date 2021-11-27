@@ -19,6 +19,7 @@ package magicmime
 import (
 	"encoding/base64"
 	"testing"
+	"fmt"
 )
 
 // Tests a gif file.
@@ -120,6 +121,10 @@ func TestMissingFile(t *testing.T) {
 	if err == nil {
 		t.Error("no error for missing file")
 	}
+}
+
+func TestVersion(t *testing.T) {
+	t.Log(fmt.Sprintf("libmagic version is %d", Version()))
 }
 
 func BenchmarkZipFile(b *testing.B) {
